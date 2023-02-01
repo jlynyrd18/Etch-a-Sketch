@@ -5,7 +5,19 @@ container.style.height = "400px";
 body.append(contianer);
 
 //fucntion for loop to run create element 64 times if no user input?
-
+const size = 0;
+function etch_grid (size) {
+    if (size === 0) {
+        for (let i = 0; i < 64; i++) {
+            const gridDefault = document.createElement("div");
+        }
+        container.appendChild(gridDefault);
+    }else if (size !== 0) {
+        for (let i = 0; i < size; i++) {
+            const gridInput = document.createElement("div");
+        }
+    }   container.appendChild(gridInput);
+}
 
 //event listeners for hovering mouse, try class color of white, then when hovered change class to black
 
