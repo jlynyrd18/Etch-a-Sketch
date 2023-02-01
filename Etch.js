@@ -2,7 +2,7 @@
 const container = document.createElement("div");
 container.style.width = "600px";
 container.style.height = "400px";
-body.append(contianer);
+body.append(container);
 
 //fucntion for loop to run create element 64 times if no user input?
 const size = 0;
