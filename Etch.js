@@ -17,7 +17,7 @@ function etchGrid (size) {
             const gridDefault = document.createElement("div");
             gridDefault.style.border = "1px solid black";
             gridDefault.className = "pix";
-            container.appendChild(gridDefault);
+            document.getElementById("container").appendChild(gridDefault);
         }
         
     }else if (size !== 64) {
@@ -40,5 +40,12 @@ controlBox.style.width = "100px";
 controlBox.style.height = "250px";
 document.body.append(controlBox);
 controlBox.style.border = "3px solid black";
+
+//inside box need text field saying description, input field with size of grid, and button to refresh and run function
+const desc = document.createElement("h3");
+desc.textContent = "Size";
+controlBox.appendChild(desc);
+desc.style.textAlign = "center";
+
 
 const userInput = document.createElement("button");
