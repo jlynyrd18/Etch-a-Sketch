@@ -1,10 +1,6 @@
 //webpage must load with a 16x16 grid of square divs, put inside a container div
 const container = document.createElement("div");
-container.style.width = "600px";
-container.style.height = "400px";
 document.body.append(container);
-container.style.border = "3px solid black";
-container.style.flex = "flex";
 container.id = "container";
 
 
@@ -47,5 +43,10 @@ desc.textContent = "Size";
 controlBox.appendChild(desc);
 desc.style.textAlign = "center";
 
+const userInput = document.createElement("input");
+controlBox.appendChild(userInput);
+userInput.id = "userInput";
 
-const userInput = document.createElement("button");
+const refreshBtn = document.createElement("button");
+controlBox.appendChild(refreshBtn);
+refreshBtn.id = "refreshBtn";
