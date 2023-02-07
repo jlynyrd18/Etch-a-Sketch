@@ -37,7 +37,7 @@ desc.style.textAlign = "center";
 const userInput = document.createElement("input");
 controlBox.appendChild(userInput);
 userInput.id = "userInput";
-//gets value of input field  size = document.getElementById("userInput").value
+//gets value of input field  size = document.getElementById("userInput").value; make requirement for value to be no more than 100
 
 
 const refreshBtn = document.createElement("button");
