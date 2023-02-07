@@ -6,6 +6,8 @@
 }
 #instructions {
     border-bottom: 2px dashed blue;
+    padding-bottom: 20px;
+    text-align: center;
 }
 #container {
     display: flex;
