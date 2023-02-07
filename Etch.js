@@ -1,3 +1,6 @@
+//title element to be created with h1 "Etch-a-Sketch"
+
+
 //upper half of webpage with instructions
 const instructions = document.createElement("div");
 document.body.append(instructions);
