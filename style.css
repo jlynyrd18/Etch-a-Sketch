@@ -1,6 +1,14 @@
-#container {
+#board {
     border: 3px solid black;
     width: 600px;
     height: 400px;
     display: flex;
+}
+#instructions {
+    border-bottom: 2px dashed blue;
+}
+#container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
 }
