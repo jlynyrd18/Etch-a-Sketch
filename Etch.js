@@ -46,7 +46,7 @@ const refreshBtn = document.createElement("button");
 refreshBtn.id = "refreshBtn";
 refreshBtn.textContent = "Refresh";
 controlBox.appendChild(refreshBtn);
-refreshBtn.addEventListener("click", etchGrid);
+refreshBtn.addEventListener("click", etchGrid());
 
 //webpage must load with a 16x16 grid of square divs, put inside a container div
 const board = document.createElement("div");
@@ -63,7 +63,8 @@ function etchGrid (size) {
 
 }
 
-
 //event listeners for hovering mouse, try class color of white, then when hovered change class to black
-
-
+document.getElementsByClassName("pixColor").addEventListener("mouseover", pixFill());
+function pixFill(){
+    document.getElementsByClassName("pixcolor")
+}
