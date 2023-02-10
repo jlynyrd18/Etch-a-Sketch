@@ -2,7 +2,7 @@
     border: 3px solid black;
     width: 700px;
     height: 500px;
-    display: flex;
+    display:grid;
 }
 #instructions {
     border-bottom: 2px dashed blue;
