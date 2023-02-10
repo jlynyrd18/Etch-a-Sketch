@@ -1,4 +1,5 @@
 //fucntion for loop to run create element 64 times if no user input?
+
 function etchGrid (size) {
         let squares = board.querySelectorAll("div");
         squares.forEach((div) => div.remove());
@@ -13,6 +14,7 @@ function etchGrid (size) {
     }
 
 }
+etchGrid(16)
 
 //event listeners for hovering mouse, try class color of white, then when hovered change class to black
 /*
