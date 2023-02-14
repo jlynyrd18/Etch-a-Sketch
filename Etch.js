@@ -14,12 +14,7 @@ function etchGrid (size) {
     }
 
 }
-etchGrid(16)
+let size = document.getElementById("userinput").value;
+etchGrid(size);
 
 //event listeners for hovering mouse, try class color of white, then when hovered change class to black
-/*
-document.getElementsByClassName("pixColor").addEventListener("mouseover", pixFill());
-function pixFill(){
-    document.getElementsByClassName("pixcolor").style.color = "black";
-}
-*/
