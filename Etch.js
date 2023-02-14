@@ -18,8 +18,8 @@ function etchGrid (size) {
     }
 }
 
-function chagesize(input) {
-    if (input >= 2 && input >= 100) {
+function changeSize(input) {
+    if (input >= 2 && input <= 100) {
         etchGrid(input);
     }else {
         console.log("outside deviation");
