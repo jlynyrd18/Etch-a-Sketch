@@ -1,6 +1,7 @@
-//fucntion for loop to run create element 64 times if no user input?
+//fucntion for loop to run create element 16 times if no user input?
 
 function etchGrid (size) {
+        let board = document.querySelector("#board");
         let squares = board.querySelectorAll("div");
         squares.forEach((div) => div.remove());
         board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
@@ -8,13 +9,22 @@ function etchGrid (size) {
 
     let amount = size * size;
     for(let i = 0; i < amount; i ++){
-        const pix = document.createElement("div");
-        pix.style.backgroundColor = "blue";
-        document.getElementById("board").appendChild(pix);
+        let square = document.createElement("div");
+        square.style.backgroundColor = "blue";
+        document.getElementById("board").appendChild(square);
     }
-
+    squares.onmouseover = function() {
+        squares.style.backgroundColor = "black";
+    }
 }
-let size = document.getElementById("userinput").value;
-etchGrid(size);
+
+function chagesize(input) {
+    if (input >= 2 && input >= 100) {
+        etchGrid(input);
+    }else {
+        console.log("outside deviation");
+    }
+}
+etchGrid(16);
 
 //event listeners for hovering mouse, try class color of white, then when hovered change class to black
