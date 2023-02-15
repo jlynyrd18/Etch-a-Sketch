@@ -10,11 +10,11 @@ function etchGrid (size) {
     let amount = size * size;
     for(let i = 0; i < amount; i ++){
         let square = document.createElement("div");
-        square.style.backgroundColor = "blue";
+        square.addEventListener("mouseover", () => {
+            square.style.backgroundColor = "black";
+        })
+        square.style.backgroundColor = "white";
         document.getElementById("board").appendChild(square);
-    }
-    squares.onmouseover = function() {
-        squares.style.backgroundColor = "black";
     }
 }
 
