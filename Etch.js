@@ -26,5 +26,3 @@ function changeSize(input) {
     }
 }
 etchGrid(16);
-
-//event listeners for hovering mouse, try class color of white, then when hovered change class to black
