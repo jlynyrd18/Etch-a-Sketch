@@ -16,6 +16,7 @@
     width: 200px;
     height: 250px;
     border: 3px solid black;
+    text-align: center;
 }
 
 #cbtext {
@@ -32,7 +33,6 @@
     padding-bottom: 20px;
 }
 #refreshbutton {
-    text-align: center;
     margin-top: 20px;
 }
 .pixColor {
