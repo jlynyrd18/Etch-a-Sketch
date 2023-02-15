@@ -4,27 +4,36 @@
     height: 500px;
     display:grid;
 }
-#instructions {
-    border-bottom: 2px dashed blue;
-    padding-bottom: 20px;
-    text-align: center;
-}
+
 #container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
 }
+
 #controlbox {
     width: 200px;
     height: 250px;
     border: 3px solid black;
 }
+
 #cbtext {
     text-align: center;
 }
+
 #userInput {
     margin-bottom: 10px;
+}
+
+#titlearea {
+    text-align: center;
+    border-bottom: 2px dashed blue;
+    padding-bottom: 20px;
+}
+#refreshbutton {
+    text-align: center;
+    margin-top: 20px;
 }
 .pixColor {
     color: white;
